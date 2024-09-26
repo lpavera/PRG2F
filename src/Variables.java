@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Variables {
@@ -21,6 +23,8 @@ public class Variables {
          * Poté je:
          * Vypište, Přehoďte, Vypište,
          */
+        System.out.println("PREHAZOVANI CISEL");
+
         int cislo1 = sc.nextInt();
         int cislo2 = sc.nextInt();
 
@@ -42,6 +46,7 @@ public class Variables {
          * Napište jednoduchou kalkulačku, která bude umět +, -, *, / nad dvěma čísly z množiny R (Reálných čísel).
          * Výsledky vypište na konzoli
          */
+        System.out.println("JEDNODUCHA KALKULACKA");
 
         double a = sc.nextDouble();
         double b = sc.nextDouble();
@@ -66,6 +71,8 @@ public class Variables {
          * Zeptejte se uživatele na jeho, jméno, příjmení, PSČ a rodné číslo
          * Údaje pak uživateli vypište
          */
+        System.out.println("UDAJE O UZIVATELI");
+
         System.out.println("zadej jmeno");
         String jmeno = sc.next();
 
@@ -97,7 +104,59 @@ public class Variables {
          System.out.println();
          }
          */
+        /**strany ctverce
+         *
+         */
+        System.out.println("STRANY OBDELNIKU NEBO CTVERCE");
 
+        System.out.println("zadej stranu a");
+        int x = sc.nextInt();
+
+        System.out.println("zadejte stranu b");
+        int y = sc.nextInt();
+
+        System.out.println(2*(x+y));
+
+        /** celsius na farenheit
+         *
+         */
+        //  F = C * (9/5) + 32
+        System.out.println("CELSIUS NA FARENHEIT");
+
+        System.out.println("zadej teplotu ve stupnich celsius:");
+        double celsius = sc.nextDouble();
+        double F = celsius * (9f/5) + 32;
+
+        System.out.println("teplota v F" + F);
+
+        /** random cisla
+         *
+         */
+        System.out.println("RANDOM CISLA");
+
+        int max = 50;
+        int min = 12;
+
+        Random rng = new Random();
+        int vytvor = rng.nextInt(min, max);
+
+        /**nacist horni a spodni mez od uzivatele a vypsat nahodne cislo mezi
+         *
+         */
+        System.out.println("HORDI A DOLNI HRANICE A NECO TO VYHODI");
+
+        System.out.println("napis dolni hranici");
+        int p = sc.nextInt();
+        System.out.println("napis horni hranici");
+        int o = sc.nextInt();
+
+        min = p;
+        max = o;
+
+        Random lmp = new Random();
+        int vecCoSemChtel = lmp.nextInt(min, max);
+
+        System.out.println("nahodne cislo " + vecCoSemChtel);
         /*
         Pokud byste chtěli vypisovat barevně, lze využít tyto řetězce
         - Použití - System.out.println(RED + "Your message" + Reset);
