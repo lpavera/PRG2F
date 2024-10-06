@@ -35,14 +35,99 @@ public class UkolZHodiny {
         }
         */
 
+
+
+        /*
         //zadani ciselne hodnoty a zjistit jestli je v intervalu
 
 
         System.out.println("Napiš číslo");
         int b = sc.nextInt();
 
-        if (100 >= b <= -100)
+        if (b <= 100 && b >= -100){
+            System.out.println("číslo je v intervalu");
+        }
+        else{
+            System.out.println("číslo není v intervalu");
+        }
+        */
 
+
+        /*
+        //zadani ciselne hodnoty a zjistit jestli je v intervalu ale nesmi byt 0
+
+
+        System.out.println("Napiš číslo");
+        int b = sc.nextInt();
+
+        if (b <= 100 && b >= -100 && b != 0){
+            System.out.println("číslo je v intervalu");
+        }
+        else{
+            System.out.println("číslo není v intervalu");
+        }
+        */
+
+
+
+        /*
+        //zadani ciselne hodnoty a zjistit jestli NENÍ v intervalu
+
+
+        System.out.println("Napiš číslo");
+        int b = sc.nextInt();
+
+        if (b < -100){
+            System.out.println("číslo je v intervalu");
+        }
+        else if (b > 100) {
+            System.out.println("číslo je v intervalu");
+        }
+        else{
+            System.out.println("číslo není v intervalu");
+        }
+        */
+
+        /*
+        //vstup do kina a slevy pro věkové skupiny
+
+        int cena = 100;
+        System.out.println("napiš věk");
+        int vek = sc.nextInt();
+
+        if (vek < 13 && vek >= 1 || vek >= 70){
+            System.out.println("cena lístku je:" + cena * 0.6 + "kč");
+        }
+        else if (vek >= 13 && vek < 19) {
+            System.out.println("cena lístku je:" + cena * 0.8 + "kč");
+        }
+        else {
+            System.out.println("cena lístku je:" + cena + "kč");
+        }
+        */
+
+
+        //pozemek, obdélník, cena za m2 = 640kč, uživatel zadá parcelu (délku a šířku) a kolik má peně a program napíše jestli si to může dovolit
+
+        int cenaM2 = 640;
+
+        System.out.println("napiš délku pozemku");
+        int delka = sc.nextInt();
+
+        System.out.println("napiš šířku pozemku");
+        int sirka = sc.nextInt();
+
+        System.out.println("napiš kolik máš peněz");
+        int prachy = sc.nextInt();
+
+        // prachy > delka * sirka * cenaM2   --  mas vic penez nez stojí pozemek
+
+        if (prachy >= sirka * delka * cenaM2) {
+            System.out.println("Máte peníze");
+        }
+        else {
+            System.out.println("Nemáte peníze");
+        }
 
     }
 }
