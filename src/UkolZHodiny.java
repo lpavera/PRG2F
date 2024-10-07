@@ -28,7 +28,7 @@ public class UkolZHodiny {
         int HodHostkou = rng.nextInt(1, 7);
         int HodKostkou = rng.nextInt(1, 7);
 
-        if (HodHostkou + HodKostkou == 10) {
+        if (HodHostkou + HodKostkou >= 10 || HodHostkou == HodKostkou) {
             System.out.println("Vyhráls");
         } else {
             System.out.println("Máš to blbý");
