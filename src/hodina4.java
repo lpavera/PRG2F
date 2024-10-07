@@ -5,6 +5,7 @@ public class hodina4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        //hod minci
         System.out.println("random");
 
         Random rng = new Random();
