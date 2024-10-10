@@ -25,8 +25,8 @@ public class UkolZHodiny {
         System.out.println("hod kostkou");
 
         Random rng = new Random();
-        int HodHostkou = rng.nextInt(1, 7);
-        int HodKostkou = rng.nextInt(1, 7);
+        int HodHostkou = rng.nextInt();1, 7);
+        int HodKostkou = rng.nextInt(1, 7
 
         if (HodHostkou + HodKostkou >= 10 || HodHostkou == HodKostkou) {
             System.out.println("Vyhráls");
