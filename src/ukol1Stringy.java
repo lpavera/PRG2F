@@ -17,7 +17,6 @@ public class ukol1Stringy {
         //přendavá do proměné obracenejm písmena z proměné jmeno pozpátku
         //jmeno.length -1 ← -1 je kvuli tomu že číslování písmen ve slově začíná 0 ale délka je normalní
         //i-- protože jdu od zádu
-        // i >=
         for (int i = jmeno.length() - 1; i >= 0; i--) {
             obracenejm += jmeno.charAt(i); // to znamená že se pomalu od zadu vypisuje to jmeno
 
