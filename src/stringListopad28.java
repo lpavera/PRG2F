@@ -4,7 +4,7 @@ public class stringListopad28 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in); // začíná scanner
 
-/*
+
         String jmeno = "           Pepa Pepa";
         String prijmeni = "Kokotek";
 
@@ -12,8 +12,7 @@ public class stringListopad28 {
 
         System.out.println(jmeno + " " + prijmeni);
 
-        alternativa
-
+        //alternativa
         String spojene = jmeno.concat(prijmeni);
         System.out.println(spojene);
 
@@ -31,14 +30,14 @@ public class stringListopad28 {
 
         System.out.println(jmeno.trim()); // odenda mezery na konci a na začátku
         System.out.println(jmeno.strip()); // odenda mezery na konci a na začátku, ALE JE LEPŠÍ → POUŽÍVAT!!
-        */
+
 
         System.out.println("Napiš větu alespon o 2 slovech");
         String veta = sc.nextLine();
         // Jak se nazývá město zimbabve -- zjistit jak je dlouhé první slovo
 
         System.out.println("Délka prvního slova je: " + veta.indexOf(' '));
-/*
+
         int pocetslov = 0;
 
         for (int i = 0; i < veta.length(); i++ ) {
@@ -47,7 +46,7 @@ public class stringListopad28 {
             }
         } System.out.println("Počet slov je: " + pocetslov);
 
- */
+
 
         //System.out.println("Počet slov je: " + veta.split("").length); // druhá varianta - mi nefunguje
 
