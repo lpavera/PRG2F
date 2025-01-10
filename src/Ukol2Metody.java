@@ -1,11 +1,7 @@
-import javax.swing.*;
-import java.util.Scanner;
 
 public class Ukol2Metody {
 
     static void validatePassword(String password){
-
-
 
         Boolean podminka = true;
 
