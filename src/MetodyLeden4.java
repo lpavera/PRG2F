@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class MetodyLeden4 {
 
 
@@ -97,14 +99,24 @@ public class MetodyLeden4 {
                 return true;
             }
 
-            drawHangman(drawWord(guess));
+            drawHangman(!drawWord(guess));
 
             return secret.contentEquals(word);
         }
 
         public static void main(String[] args) {
-            nextRound('a');
-            nextRound('s');
+
+            Scanner sc = new Scanner(System.in);
+
+            String pismeno = sc.next();
+            nextRound(pismeno.charAt(0));
+
+            boolean konec = nextRound(pismeno.charAt(0));
+
+            while (!konec){
+                pismeno = sc.next();
+                konec = nextRound(pismeno.charAt(0));
+            }
         }
 
 
