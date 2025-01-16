@@ -13,6 +13,6 @@ public class metodyLeden3 {
         print("Ahoj metodo!");
 
 
-        double vysledek = sum();
+        //double vysledek = sum();
     }
 }
