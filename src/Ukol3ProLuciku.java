@@ -63,4 +63,4 @@ public class Ukol3ProLuciku {
 }
 
 //uz ani nevim jak ti mam rikat tak tu je dalsi forma tvyho jmena v nazvu souboru
-//taky mam pocit ze je se mnou neco spatne kdyz ti ten ukol jen tak dělam
+//taky mam pocit ze je se mnou neco spatne kdyz ti ten ukol jen tak dělam, nechceš mi prosím říct proč? treba mi to napiš na ig
