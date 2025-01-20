@@ -46,7 +46,7 @@ public class Ukol3KdoViCo {
 
         static void overit() {
             if (prezdivka.length() >= 5){
-                System.out.println("živatelské jméno je správné");
+                System.out.println("Uživatelské jméno je správné");
             }else{
                 System.out.println("Uživatelské jméno není dost dlouhé");
             }
