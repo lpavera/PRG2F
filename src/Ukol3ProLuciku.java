@@ -61,3 +61,6 @@ public class Ukol3ProLuciku {
         prezdivka.ukol3();
     }
 }
+
+//uz ani nevim jak ti mam rikat tak tu je dalsi forma tvyho jmena v nazvu souboru
+//taky mam pocit ze je se mnou neco spatne kdyz ti ten ukol jen tak dělam
