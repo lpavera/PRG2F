@@ -36,7 +36,7 @@ public class Ukol3ProLuciku {
 
         static void zaJednicku(){
             Scanner sc1 = new Scanner(System.in);
-            System.out.println("Napiš datum svého narození");
+            System.out.println("Napiš rok svého narození");
             String datum = sc1.next();
             String cislo = datum.substring(2 , 4);
             prezdivka = prezdivka.concat(cislo);
