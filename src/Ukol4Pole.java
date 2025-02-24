@@ -85,3 +85,6 @@ public class Ukol4Pole {
         sortByRarity();
     }
 }
+
+
+//musel jsem předělat nějaké chyby v mém programu, při řazení podle abecedy to neprohazovalo se slovy i raritu
