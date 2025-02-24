@@ -79,5 +79,4 @@ public class Ukol4Pole2 {
         abecedne();
         dleRarity();
     }
-
 }
