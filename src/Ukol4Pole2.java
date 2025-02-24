@@ -57,7 +57,6 @@ public class Ukol4Pole2 {
         static void dleRarity(){
             for (int i = 0; i < inventory.length - 1; i++) {
                 for (int j = 0; j < inventory.length - 1 - i; j++) {
-                    //jestli že rarita j je vetsi nez rarita j+1 (pozivi pred ní) tak se posune na její pzici a to samé potom platí i pro inventár odpovídající tomu místu
                     if (rarity[j] > rarity[j + 1] || (rarity[j] == rarity[j + 1] && inventory[j].compareTo(inventory[j + 1]) > 0)) {
                         char a = rarity[j];
                         rarity[j] = rarity[j + 1];
