@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Ukol4Pole2 {
 
         static String[] inventory = {

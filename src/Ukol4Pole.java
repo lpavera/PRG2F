@@ -31,6 +31,7 @@ public class Ukol4Pole {
         }
 
     }
+
     //trideni podle abecedy
     public static void sortAlphabetically() {
         for (int i = 0; i < inventory.length - 1; i++) {
@@ -55,6 +56,7 @@ public class Ukol4Pole {
         }
         System.out.println();
     }
+
     //trideni podle rarity
     public static void sortByRarity() {
         for (int i = 0; i < inventory.length - 1; i++) {
@@ -79,6 +81,7 @@ public class Ukol4Pole {
             System.out.println(inventory[i] + " (" + rarity[i] + ")");
         }
     }
+
     public static void main(String[] args) {
         addNewItems();
         sortAlphabetically();
