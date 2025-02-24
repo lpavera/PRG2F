@@ -12,13 +12,9 @@ public class Ukol4Pole {
             "Hellseherischer Toaster", "Atom-Schaumbad"
     };
 
-    static char[] rarity = {'C', 'D', 'D', 'D', 'B', 'A', 'D', 'E', 'E', 'E', 'A', 'E', 'D', 'A', 'E', 'D', 'A', 'A', 'D', 'A', 'E', 'D', 'E', 'B', 'C', 'C', 'A', 'B', 'C', 'C', 'E', 'E'};
-
-    public static void main(String[] args) {
-        addNewItems();
-        sortAlphabetically();
-        sortByRarity();
-    }
+    static char[] rarity = {'C', 'D', 'D', 'D', 'B', 'A', 'D', 'E', 'E', 'E', 'A', 'E', 'D', 'A', 'E',
+            'D', 'A', 'A', 'D', 'A', 'E', 'D', 'E', 'B', 'C', 'C', 'A', 'B', 'C', 'C', 'E', 'E'
+    };
 
     public static void addNewItems() {
         String[] newItems = {"Atombombe", "Redbull", "Doppelkupplungs-Automatikgetriebe", "Hundescheiße" };
@@ -37,11 +33,25 @@ public class Ukol4Pole {
     }
     //trideni podle abecedy
     public static void sortAlphabetically() {
-        Arrays.sort(inventory);
+        for (int i = 0; i < inventory.length - 1; i++) {
+            for (int j = 0; j < inventory.length - 1 - i; j++) {
+                if (inventory[j].compareTo(inventory[j + 1]) > 0) {
+                    // Prohození inventory
+                    String tempInv = inventory[j];
+                    inventory[j] = inventory[j + 1];
+                    inventory[j + 1] = tempInv;
+
+                    // Prohození rarity
+                    char tempR = rarity[j];
+                    rarity[j] = rarity[j + 1];
+                    rarity[j + 1] = tempR;
+                }
+            }
+        }
         //vypsání
         System.out.println("Inventář seřazený abecedně:");
         for (int i = 0; i < inventory.length; i++) {
-            System.out.println(inventory[i]);
+            System.out.println(inventory[i] + " (" + rarity[i] + ")" );
         }
         System.out.println();
     }
@@ -49,11 +59,14 @@ public class Ukol4Pole {
     public static void sortByRarity() {
         for (int i = 0; i < inventory.length - 1; i++) {
             for (int j = 0; j < inventory.length - 1 - i; j++) {
+                //jestli že rarita j je vetsi nez rarita j+1 (pozivi pred ní) tak se posune na její pzici a to samé potom platí i pro inventár odpovídající tomu místu
                 if (rarity[j] > rarity[j + 1] || (rarity[j] == rarity[j + 1] && inventory[j].compareTo(inventory[j + 1]) > 0)) {
+                    // Prohození inventory
                     char a = rarity[j];
                     rarity[j] = rarity[j + 1];
                     rarity[j + 1] = a;
 
+                    // Prohození rarity
                     String b = inventory[j];
                     inventory[j] = inventory[j + 1];
                     inventory[j + 1] = b;
@@ -65,5 +78,10 @@ public class Ukol4Pole {
         for (int i = 0; i < inventory.length; i++) {
             System.out.println(inventory[i] + " (" + rarity[i] + ")");
         }
+    }
+    public static void main(String[] args) {
+        addNewItems();
+        sortAlphabetically();
+        sortByRarity();
     }
 }
