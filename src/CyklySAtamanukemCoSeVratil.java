@@ -4,7 +4,7 @@ public class CyklySAtamanukemCoSeVratil {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        /*
+
         int velikostMrizky = 5;
 
         for (int radek = 0; radek < velikostMrizky; radek++){
@@ -18,7 +18,7 @@ public class CyklySAtamanukemCoSeVratil {
             }
             System.out.println();
         }
-        */
+
 
         /*
         int velikostMrizky = 5;
