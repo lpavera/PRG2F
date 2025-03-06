@@ -71,7 +71,7 @@ public class CyklySAtamanukemCoSeVratil {
         }
 
          */
-
+/*
         //normalni Z
         int velikostMrizky = 10;
 
@@ -86,6 +86,8 @@ public class CyklySAtamanukemCoSeVratil {
             System.out.println();
 
         }
+
+ */
 
 
     }
