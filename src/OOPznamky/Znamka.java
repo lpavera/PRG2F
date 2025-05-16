@@ -15,11 +15,14 @@ public class Znamka {
 
     }
 
+    public Znamka(int znamka, String nazevPredmetu) {
+        this.znamka = znamka;
+        this.nazevPredmetu = nazevPredmetu;
+    }
+
     public String getNazevPredmetu() {
         return nazevPredmetu;
     }
 
-    public void setNazevPredmetu(String nazevPredmetu) {
-        this.nazevPredmetu = nazevPredmetu;
-    }
+
 }
