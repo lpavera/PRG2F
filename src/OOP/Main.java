@@ -2,7 +2,7 @@ package OOP;
 
 public class Main {
     public static void main(String[] args) {
-        Clovek kralHandrich = new Clovek(1);
+       /* Clovek kralHandrich = new Clovek(1);
 
         //kralHandrich.velikostPalceUNohy = 1;
 
@@ -23,6 +23,18 @@ public class Main {
         Kruznice l = new Kruznice(4.8);
 
         l.obsah();
-        l.obvod();
+        l.obvod();*/
+
+
+
+        Kruznice k = new Kruznice(); // vytvoření prázdného objektu
+
+        k.setPolomer(-7.5); // Hodnota předaná setteru je neplatná => nenastaví se
+
+        k.setPolomer(12.7);
+        double polomerKruznice = k.getPolomer();
+
+        // Vypíše se: Hodnota polomeru kruznice je: 12.7
+        System.out.println("Hodnota polomeru kruznice je: " + polomerKruznice);
     }
 }
