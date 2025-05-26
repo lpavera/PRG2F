@@ -1,4 +1,4 @@
-package OOP;
+/*package OOP;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,15 +14,4 @@ public class Main {
         System.out.println(kralHandrich.velikostPalceUNohy);
 
 
-    //    Kniha k = new Kniha("Dostojevsky");
-    //    k.nazevKnihy = "Zločin a Trest";
-
-     //   k.vypisInfo();
-
-
-        Kruznice l = new Kruznice(4.8);
-
-        l.obsah();
-        l.obvod();
-    }
-}
+    }*/
