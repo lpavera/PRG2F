@@ -8,7 +8,7 @@ public class ukol {
 
         Ucet ucet1 = new Ucet("Ctirad");
         Ucet ucet2 = new Ucet("Zikmund");
-
+/*
         ucet1.pridejCastku(10_000);
         ucet2.pridejCastku(30_000);
 
@@ -20,6 +20,6 @@ public class ukol {
 
         System.out.println("📊 Konečné zůstatky:");
         ucet1.vypisZustatek();
-        ucet2.vypisZustatek();
+        ucet2.vypisZustatek();*/
     }
 }

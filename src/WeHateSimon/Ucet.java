@@ -12,7 +12,7 @@ public class Ucet {
     }
     public void pridejCastku(Double i){
 
-    }
+    }/*
     public Double posliPenize(){
 
     }
@@ -21,6 +21,6 @@ public class Ucet {
     }
     public void vypisZustatek(){
 
-    }
+    }*/
 }
 
